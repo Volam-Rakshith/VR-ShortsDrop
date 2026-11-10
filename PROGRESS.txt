@@ -1,0 +1,10 @@
+layout: index.html + styles.css + app.js drawn: channel box, drop zone cards, paste box, review, upload queue; desktop and 390px phone render with no overflow (qa/desktop-full.png, qa/mobile-full.png)
+parser: src/parser.js splits blocks by ---, reads labelled or unlabelled text, 100-char title cut, <> removed, hashtags, IG + YouTube captions kept; 4 parser tests pass
+upload: src/uploader.js refresh token, chunked resumable upload with 308/503 resume, one-at-a-time queue, quota stops the queue; 7 upload tests pass on a mocked YouTube endpoint
+tests: 20 node tests pass (parser 4, upload 7, site 9); browser run in headless Chromium with mocked Google endpoints: two Shorts uploaded, quota stop verified (qa/e2e-done.png, qa/quota-done.png)
+
+stage 4: site login made on this device (email + password, PBKDF2-SHA-256 with a per-device salt via WebCrypto, password never stored as text); gate hides the steps until signed in; another device has no account; 7 login tests pass; browser check: make, sign out, wrong password refused, right password in (qa/gate-phone.png at phone width; desktop run in the e2e script)
+stage 5: branding VR ShortsDrop, by VR Developments, on the page title, header and footer; old name removed from code comments and storage key; site test checks it; README still to do in stage 8
+stage 7: per-run log: every video with the title, description, tags and captions actually sent, and uploaded / failed / not uploaded with the reason; saved in this browser (last 20 runs) and downloadable as .txt; 8 log tests pass; browser run shows the quota stop logged as not uploaded (qa/log-done.png, qa/last-run-log.txt)
+stage 8 (README part): README rewritten for VR ShortsDrop v2 by VR Developments: run, sign-in, Google setup, quota facts read on Google's quota page 2026-11-09 (videos.insert has its own 100/day bucket, 1 per call; 1,600 units not on the page), limits in plain words, tests run and not run
+stage 8: final zip /home/user/tab/files/vr-shortsdrop.zip (README.md at the root of the zip, site files at the root, tests and qa included); unzipped copy passes all 39 node tests; not published, not sent to anyone

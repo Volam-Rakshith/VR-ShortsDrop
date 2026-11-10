@@ -1,0 +1,9 @@
+{
+  "name": "vr-upload-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static browser page: drop videos, paste one mixed text block, review fields, upload to YouTube one at a time.",
+  "scripts": {
+    "test": "node --test test/parser.test.js test/upload.test.js test/login.test.js test/runlog.test.js test/site.test.js"
+  }
+}

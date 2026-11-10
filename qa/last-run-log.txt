@@ -1,0 +1,35 @@
+VR ShortsDrop upload log (by VR Developments)
+run started: 2026-11-09T17:08:00.441Z
+run ended: 2026-11-09T17:08:00.467Z
+videos: 3 · uploaded: 1 · failed: 0 · not uploaded: 2
+note: captions are copy-only in this version (not posted to Instagram; YouTube caption tracks are not uploaded).
+
+01 · vr-short.mp4 · UPLOADED · Short
+   link: https://www.youtube.com/watch?v=vid_s1
+   title used: Coffee at 3am #Shorts
+   description used:
+      quick look
+   tags used: Shorts, reels
+   privacy: private
+   instagram caption (copy only, not posted): hi #reels
+   youtube captions text (not uploaded): (none)
+
+02 · vr-wide.mp4 · NOT UPLOADED
+   reason: not ticked for upload in step 04
+   title used: Night drive, long title
+   description used:
+      wide one
+   tags used: (none)
+   privacy: private
+   instagram caption (copy only, not posted): night drive
+   youtube captions text (not uploaded): (none)
+
+03 · vr-short.mp4 · NOT UPLOADED · Short
+   reason: daily quota reached, resume tomorrow
+   title used: Rain on glass #Shorts
+   description used:
+      third one
+   tags used: rain, city, Shorts
+   privacy: private
+   instagram caption (copy only, not posted): (none)
+   youtube captions text (not uploaded): (none)

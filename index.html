@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VR ShortsDrop: upload queue, by VR Developments</title>
+  <meta name="description" content="VR ShortsDrop, by VR Developments. Drop videos, paste one text block, review the fields, and upload to YouTube one at a time.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brandrow">
+      <div class="wordmark">VR SHORTSDROP <span class="ver">v2</span></div>
+      <div class="by mono">by VR Developments</div>
+      <div class="account mono" id="account-bar" hidden>
+        <span id="account-email"></span>
+        <button type="button" id="signout" class="btn ghost small">sign out</button>
+        <button type="button" id="erase" class="btn ghost small">erase this device</button>
+      </div>
+    </div>
+    <p class="honest" role="note"><strong>uploads only run while this page is open.</strong> keep this tab open until the queue says done.</p>
+  </header>
+
+  <div class="layout">
+    <aside class="index" id="index-aside" data-app aria-label="Video index">
+      <div class="index-head mono">INDEX</div>
+      <ol id="index-list" class="index-list"><li class="index-empty mono">no videos yet</li></ol>
+      <div class="count mono" id="count-line">0 of 0 done</div>
+    </aside>
+
+    <main class="steps">
+      <section class="step gate" id="gate" aria-labelledby="h-gate">
+        <div class="step-row"><span class="num mono">··</span><h2 id="h-gate" class="mono">SIGN IN TO THIS DEVICE</h2><span class="pill mono" id="gate-state">locked</span></div>
+        <div class="note-box">
+          <p><strong>this login opens only on the device that made it.</strong> another phone needs its own account: make one there and link the same YouTube channel in step 01.</p>
+          <p><strong>honest note:</strong> a static page cannot fully protect your keys from someone who has this same phone and can open this browser. the login is a lock on the page, not a vault.</p>
+        </div>
+        <form id="gate-create" class="grid-form" autocomplete="off" hidden>
+          <p class="hint">no account on this device yet. make one: this email and password are stored only in this browser, and the password is never kept as text.</p>
+          <label>Email <input name="email" type="email" autocomplete="username" required></label>
+          <label>Password (8 characters or more) <input name="password" type="password" autocomplete="new-password" required></label>
+          <label>Type the password again <input name="password2" type="password" autocomplete="new-password" required></label>
+          <div class="actions"><button type="submit" class="btn primary">Make this device's account</button></div>
+        </form>
+        <form id="gate-signin" class="grid-form" autocomplete="off" hidden>
+          <label>Email <input name="email" type="email" autocomplete="username" required></label>
+          <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+          <div class="actions"><button type="submit" class="btn primary">Sign in</button></div>
+        </form>
+        <p id="gate-message" class="queue-message mono" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="step" data-app id="step-channel" aria-labelledby="h-channel">
+        <div class="step-row"><span class="num mono">01</span><h2 id="h-channel" class="mono">CHANNEL</h2><span class="pill mono" id="channel-state">not saved</span></div>
+        <div class="note-box">
+          <p><strong>browser storage is not a vault.</strong> anyone with access to this browser can read these values. they are stored only here (localStorage), and sent only to Google's sign-in and YouTube upload calls.</p>
+        </div>
+        <form id="channel-form" class="grid-form" autocomplete="off">
+          <label>Channel name <input name="channelName" type="text" placeholder="VR Shorts"></label>
+          <label>API client id <input name="clientId" type="text" placeholder="xxxx.apps.googleusercontent.com"></label>
+          <label>API client secret <input name="clientSecret" type="password"></label>
+          <label>Refresh token <input name="refreshToken" type="password"></label>
+          <div class="actions">
+            <button type="submit" class="btn">Save in this browser</button>
+            <button type="button" id="channel-forget" class="btn ghost">Forget these</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="step" data-app id="step-drop" aria-labelledby="h-drop">
+        <div class="step-row"><span class="num mono">02</span><h2 id="h-drop" class="mono">DROP VIDEOS</h2><span class="pill mono" id="drop-count">0 files</span></div>
+        <label class="dropzone" id="dropzone">
+          <input id="file-input" type="file" accept="video/mp4,video/quicktime,.mp4,.mov" multiple>
+          <span class="mono">drop mp4 or mov files here, or click to pick</span>
+        </label>
+        <ul id="cards" class="cards"></ul>
+      </section>
+
+      <section class="step" data-app id="step-paste" aria-labelledby="h-paste">
+        <div class="step-row"><span class="num mono">03</span><h2 id="h-paste" class="mono">PASTE THE TEXT</h2><span class="pill mono" id="paste-state">nothing yet</span></div>
+        <p class="hint">one block per video. separate blocks with a line of three dashes (---). labels are optional: Title:, Description:, Tags:, Instagram:, YouTube captions:. without labels the first line becomes the title.</p>
+        <textarea id="mix" rows="9" spellcheck="false" placeholder="Title: ...&#10;Description: ...&#10;Instagram: ..."></textarea>
+        <div class="actions"><button type="button" id="split" class="btn">Split into fields</button></div>
+        <p id="block-line" class="hint mono"></p>
+      </section>
+
+      <section class="step" data-app id="step-review" aria-labelledby="h-review">
+        <div class="step-row"><span class="num mono">04</span><h2 id="h-review" class="mono">REVIEW</h2><span class="pill mono" id="review-state">waiting for files</span></div>
+        <div id="review" class="review"></div>
+      </section>
+
+      <section class="step" data-app id="step-upload" aria-labelledby="h-upload">
+        <div class="step-row"><span class="num mono">05</span><h2 id="h-upload" class="mono">UPLOAD</h2><span class="pill mono" id="progress-count">0 of 0 done</span></div>
+        <div class="actions">
+          <button type="button" id="start" class="btn primary">Start upload queue</button>
+          <button type="button" id="stop" class="btn ghost" disabled>Stop after this video</button>
+        </div>
+        <div id="queue-message" class="queue-message mono" role="status" aria-live="polite"></div>
+        <p class="hint">one video at a time. YouTube's daily quota stops the queue and it resumes tomorrow.</p>
+      </section>
+      <section class="step" data-app id="step-log" aria-labelledby="h-log">
+        <div class="step-row"><span class="num mono">06</span><h2 id="h-log" class="mono">LOG</h2><span class="pill mono" id="log-state">no runs yet</span></div>
+        <p class="hint">every video in the latest run: the title, description and tags actually sent, and whether it was uploaded, failed or not uploaded (with the reason). the captions are copy-only. kept in this browser only.</p>
+        <div class="actions"><button type="button" id="log-download" class="btn" disabled>Download log (.txt)</button></div>
+        <ul id="log-list" class="log-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="foot mono">VR ShortsDrop v2 · by VR Developments · your videos go to your own YouTube channel only · nothing is posted to Instagram in this version</footer>
+
+  <script src="src/parser.js"></script>
+  <script src="src/storage.js"></script>
+  <script src="src/login.js"></script>
+  <script src="src/runlog.js"></script>
+  <script src="src/uploader.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
