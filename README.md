@@ -26,7 +26,7 @@ Tests (optional, needs Node 18 or newer, no packages to install):
 - `src/storage.js`: keeps the channel details in this browser's localStorage only
 - `src/runlog.js`: the per-run log (what was sent, what was uploaded, failed or not, and why)
 - `test/`: tests for the parser, the upload core (mocked YouTube), the login, the log, and the page; plus `e2e-browser.py` (a headless Chrome run with the Google endpoints mocked; needs Python with playwright, not part of `npm test`)
-- `qa/`: screenshots and the log file from the browser run
+- `qa/`: screenshots and the log file from the browser run; `qa/responsive-check.py` with `qa/responsive-report.json` (the width checks, see Works on)
 - `PROGRESS.txt`: one line per build stage
 
 ## Sign-in on this device (stage 4)
@@ -104,3 +104,24 @@ Total: 39 node tests (`npm test`) pass, and the browser run passes as described 
 - browser storage is not a vault. anyone with access to this browser can read these values.
 - another phone needs its own account.
 - a static page cannot fully protect your keys from someone who has this same phone.
+
+## Works on
+
+What this responsive copy was checked on, and what it was not. Checked in headless Chromium 156 (Playwright), with the page opened as a local file.
+
+**Tested**
+- Layout at 360, 390, 430, 768, 1024, 1440 and 1920 px wide: no sideways scroll (page width equals the window width) and no element sticking out past the window edge. Phones (360, 390, 430) get one column with the index as a strip across the top; 768 px gets two columns with a narrow index on the left; 1024 px and wider get the index on the left.
+- Tap targets: at 360, 390, 430 and 768 px (emulated as touch screens) every button, text input, select, textarea, file drop zone, tick row and link is at least 44 px tall. At 1024 px and wider (mouse) the small header buttons and the inputs are shorter than 44 px; that is not a phone requirement and was not changed.
+- File picker: the picker covers the whole drop zone at every width (checked by asking which element sits at the centre of the zone), and it accepts video/* plus .mp4 and .mov. Adding files by the drop zone and by the picker both fill the index, the cards and the review.
+- No action depends on hover. The only hover rules change a border colour; nothing is hidden until the pointer arrives.
+- Sign-in gate, the channel step, the drop zone, the paste box, the review fields, the upload buttons and the run log, all at the widths above, with screenshots in `qa/`.
+- The existing 39 node tests (`npm test`): 39 of 39 pass.
+- The existing browser run (`test/e2e-browser.py`, Google endpoints mocked): sign in, save channel, add two clips, the queue, the daily quota stop, the log and its download. The same checks pass as before this copy (one uploaded, two not uploaded with the reasons, the queue stopped at the quota).
+- Page errors and console errors during the responsive run: none.
+
+**Not tested**
+- Real iPhone Safari and real Android Chrome. Everything above is emulated Chromium on this machine, not a phone. Safari's own rendering, its zoom behaviour, the address bar on scroll, and the notch were not seen.
+- The file picker on a real phone camera roll. The picker is checked for coverage and accept types; that the phone opens its photo library, and that the picked file reaches the page, were not run on a device. Recordings from an iPhone are often HEVC .mov; whether Chrome on a phone plays them for the length check was not tested.
+- Real YouTube uploads. The upload endpoints are mocked in the browser run, as before.
+- Firefox, desktop Safari, Edge, and Windows; landscape phones; browser zoom above 100 percent; text size settings.
+- 1920 px was measured by the overflow and tap-target numbers and the screenshot only; it was not looked at closely by a person.

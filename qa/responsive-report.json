@@ -1,0 +1,2213 @@
+{
+  "root": "/home/user/tab/files/vr-shortsdrop-responsive",
+  "widths": {
+    "360": {
+      "gate": {
+        "overflow": {
+          "vw": 360,
+          "sw": 360,
+          "scrollsSideways": false,
+          "outside": 0,
+          "examples": []
+        },
+        "tap": [
+          {
+            "tag": "input",
+            "id": "email",
+            "label": "",
+            "w": 310,
+            "h": 44
+          },
+          {
+            "tag": "input",
+            "id": "password",
+            "label": "",
+            "w": 310,
+            "h": 44
+          },
+          {
+            "tag": "input",
+            "id": "password2",
+            "label": "",
+            "w": 310,
+            "h": 44
+          },
+          {
+            "tag": "button",
+            "id": "",
+            "label": "Make this device's account",
+            "w": 310,
+            "h": 44
+          }
+        ]
+      },
+      "overflow": {
+        "vw": 360,
+        "sw": 360,
+        "scrollsSideways": false,
+        "outside": 0,
+        "examples": []
+      },
+      "tap": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "label",
+          "id": "dropzone",
+          "label": "drop mp4 or mov files here, ",
+          "w": 310,
+          "h": 120
+        },
+        {
+          "tag": "textarea",
+          "id": "mix",
+          "label": "Title: Morning light on the ",
+          "w": 310,
+          "h": 182
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "a short look at the water at",
+          "w": 280,
+          "h": 100
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 280,
+          "h": 100
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 280,
+          "h": 100
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "the landscape one.",
+          "w": 280,
+          "h": 100
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 280,
+          "h": 100
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 280,
+          "h": 100
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 280,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 310,
+          "h": 44
+        }
+      ],
+      "picker": {
+        "accept": "video/*,.mp4,.mov",
+        "multiple": true,
+        "hitIsPicker": true,
+        "dropzoneH": 120
+      },
+      "errors": [],
+      "tapBelow44": [],
+      "tapCount": 28
+    },
+    "390": {
+      "gate": {
+        "overflow": {
+          "vw": 390,
+          "sw": 390,
+          "scrollsSideways": false,
+          "outside": 0,
+          "examples": []
+        },
+        "tap": [
+          {
+            "tag": "input",
+            "id": "email",
+            "label": "",
+            "w": 340,
+            "h": 44
+          },
+          {
+            "tag": "input",
+            "id": "password",
+            "label": "",
+            "w": 340,
+            "h": 44
+          },
+          {
+            "tag": "input",
+            "id": "password2",
+            "label": "",
+            "w": 340,
+            "h": 44
+          },
+          {
+            "tag": "button",
+            "id": "",
+            "label": "Make this device's account",
+            "w": 340,
+            "h": 44
+          }
+        ]
+      },
+      "overflow": {
+        "vw": 390,
+        "sw": 390,
+        "scrollsSideways": false,
+        "outside": 0,
+        "examples": []
+      },
+      "tap": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "label",
+          "id": "dropzone",
+          "label": "drop mp4 or mov files here, ",
+          "w": 340,
+          "h": 120
+        },
+        {
+          "tag": "textarea",
+          "id": "mix",
+          "label": "Title: Morning light on the ",
+          "w": 340,
+          "h": 182
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "a short look at the water at",
+          "w": 310,
+          "h": 100
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 310,
+          "h": 100
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 310,
+          "h": 100
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "the landscape one.",
+          "w": 310,
+          "h": 100
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 310,
+          "h": 100
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 310,
+          "h": 100
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 310,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 340,
+          "h": 44
+        }
+      ],
+      "picker": {
+        "accept": "video/*,.mp4,.mov",
+        "multiple": true,
+        "hitIsPicker": true,
+        "dropzoneH": 120
+      },
+      "errors": [],
+      "tapBelow44": [],
+      "tapCount": 28
+    },
+    "430": {
+      "gate": {
+        "overflow": {
+          "vw": 430,
+          "sw": 430,
+          "scrollsSideways": false,
+          "outside": 0,
+          "examples": []
+        },
+        "tap": [
+          {
+            "tag": "input",
+            "id": "email",
+            "label": "",
+            "w": 380,
+            "h": 44
+          },
+          {
+            "tag": "input",
+            "id": "password",
+            "label": "",
+            "w": 380,
+            "h": 44
+          },
+          {
+            "tag": "input",
+            "id": "password2",
+            "label": "",
+            "w": 380,
+            "h": 44
+          },
+          {
+            "tag": "button",
+            "id": "",
+            "label": "Make this device's account",
+            "w": 380,
+            "h": 44
+          }
+        ]
+      },
+      "overflow": {
+        "vw": 430,
+        "sw": 430,
+        "scrollsSideways": false,
+        "outside": 0,
+        "examples": []
+      },
+      "tap": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 380,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 380,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 380,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 380,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 221,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 149,
+          "h": 44
+        },
+        {
+          "tag": "label",
+          "id": "dropzone",
+          "label": "drop mp4 or mov files here, ",
+          "w": 380,
+          "h": 120
+        },
+        {
+          "tag": "textarea",
+          "id": "mix",
+          "label": "Title: Morning light on the ",
+          "w": 380,
+          "h": 182
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 380,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "a short look at the water at",
+          "w": 350,
+          "h": 100
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 350,
+          "h": 100
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 350,
+          "h": 100
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "the landscape one.",
+          "w": 350,
+          "h": 100
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 350,
+          "h": 100
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 350,
+          "h": 100
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 350,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 380,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 380,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 380,
+          "h": 44
+        }
+      ],
+      "picker": {
+        "accept": "video/*,.mp4,.mov",
+        "multiple": true,
+        "hitIsPicker": true,
+        "dropzoneH": 120
+      },
+      "errors": [],
+      "tapBelow44": [],
+      "tapCount": 28
+    },
+    "768": {
+      "gate": {
+        "overflow": {
+          "vw": 768,
+          "sw": 768,
+          "scrollsSideways": false,
+          "outside": 0,
+          "examples": []
+        },
+        "tap": [
+          {
+            "tag": "input",
+            "id": "email",
+            "label": "",
+            "w": 78,
+            "h": 170.8
+          },
+          {
+            "tag": "input",
+            "id": "password",
+            "label": "",
+            "w": 78,
+            "h": 44
+          },
+          {
+            "tag": "input",
+            "id": "password2",
+            "label": "",
+            "w": 78,
+            "h": 53.4
+          },
+          {
+            "tag": "button",
+            "id": "",
+            "label": "Make this device's account",
+            "w": 170,
+            "h": 73
+          }
+        ]
+      },
+      "overflow": {
+        "vw": 768,
+        "sw": 768,
+        "scrollsSideways": false,
+        "outside": 0,
+        "examples": []
+      },
+      "tap": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 238,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 238,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 238,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 238,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 210,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 138,
+          "h": 44
+        },
+        {
+          "tag": "label",
+          "id": "dropzone",
+          "label": "drop mp4 or mov files here, ",
+          "w": 490,
+          "h": 110
+        },
+        {
+          "tag": "textarea",
+          "id": "mix",
+          "label": "Title: Morning light on the ",
+          "w": 490,
+          "h": 182
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 183,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 460,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "a short look at the water at",
+          "w": 460,
+          "h": 92
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 225,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 225,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 460,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 460,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 460,
+          "h": 44
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 460,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "the landscape one.",
+          "w": 460,
+          "h": 92
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 225,
+          "h": 44
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 225,
+          "h": 44
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 460,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 460,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 460,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 192,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 219,
+          "h": 44
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 201,
+          "h": 44
+        }
+      ],
+      "picker": {
+        "accept": "video/*,.mp4,.mov",
+        "multiple": true,
+        "hitIsPicker": true,
+        "dropzoneH": 110
+      },
+      "errors": [],
+      "tapBelow44": [],
+      "tapCount": 28
+    },
+    "1024": {
+      "gate": {
+        "overflow": {
+          "vw": 1024,
+          "sw": 1024,
+          "scrollsSideways": false,
+          "outside": 0,
+          "examples": []
+        },
+        "tap": [
+          {
+            "tag": "input",
+            "id": "email",
+            "label": "",
+            "w": 94,
+            "h": 146.5
+          },
+          {
+            "tag": "input",
+            "id": "password",
+            "label": "",
+            "w": 94,
+            "h": 36
+          },
+          {
+            "tag": "input",
+            "id": "password2",
+            "label": "",
+            "w": 94,
+            "h": 36
+          },
+          {
+            "tag": "button",
+            "id": "",
+            "label": "Make this device's account",
+            "w": 202,
+            "h": 52
+          }
+        ]
+      },
+      "overflow": {
+        "vw": 1024,
+        "sw": 1024,
+        "scrollsSideways": false,
+        "outside": 0,
+        "examples": []
+      },
+      "tap": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 24
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 24
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 198,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 131,
+          "h": 36
+        },
+        {
+          "tag": "label",
+          "id": "dropzone",
+          "label": "drop mp4 or mov files here, ",
+          "w": 674,
+          "h": 110
+        },
+        {
+          "tag": "textarea",
+          "id": "mix",
+          "label": "Title: Morning light on the ",
+          "w": 674,
+          "h": 164
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 173,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 644,
+          "h": 36
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "a short look at the water at",
+          "w": 644,
+          "h": 90
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 317,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 317,
+          "h": 38
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 644,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 644,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 644,
+          "h": 19
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 644,
+          "h": 36
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "the landscape one.",
+          "w": 644,
+          "h": 90
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 317,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 317,
+          "h": 38
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 644,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 644,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 644,
+          "h": 19
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 181,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 206,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 190,
+          "h": 36
+        }
+      ],
+      "picker": {
+        "accept": "video/*,.mp4,.mov",
+        "multiple": true,
+        "hitIsPicker": true,
+        "dropzoneH": 110
+      },
+      "errors": [],
+      "tapBelow44": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 24
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 24
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 330,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 198,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 131,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 173,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 644,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 317,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 317,
+          "h": 38
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 644,
+          "h": 19
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 644,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 317,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 317,
+          "h": 38
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 644,
+          "h": 19
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 181,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 206,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 190,
+          "h": 36
+        }
+      ],
+      "tapCount": 28
+    },
+    "1440": {
+      "gate": {
+        "overflow": {
+          "vw": 1440,
+          "sw": 1440,
+          "scrollsSideways": false,
+          "outside": 0,
+          "examples": []
+        },
+        "tap": [
+          {
+            "tag": "input",
+            "id": "email",
+            "label": "",
+            "w": 94,
+            "h": 146.5
+          },
+          {
+            "tag": "input",
+            "id": "password",
+            "label": "",
+            "w": 94,
+            "h": 36
+          },
+          {
+            "tag": "input",
+            "id": "password2",
+            "label": "",
+            "w": 94,
+            "h": 36
+          },
+          {
+            "tag": "button",
+            "id": "",
+            "label": "Make this device's account",
+            "w": 202,
+            "h": 52
+          }
+        ]
+      },
+      "overflow": {
+        "vw": 1440,
+        "sw": 1440,
+        "scrollsSideways": false,
+        "outside": 0,
+        "examples": []
+      },
+      "tap": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 24
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 24
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 198,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 131,
+          "h": 36
+        },
+        {
+          "tag": "label",
+          "id": "dropzone",
+          "label": "drop mp4 or mov files here, ",
+          "w": 930,
+          "h": 110
+        },
+        {
+          "tag": "textarea",
+          "id": "mix",
+          "label": "Title: Morning light on the ",
+          "w": 930,
+          "h": 164
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 173,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "a short look at the water at",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "the landscape one.",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 181,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 206,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 190,
+          "h": 36
+        }
+      ],
+      "picker": {
+        "accept": "video/*,.mp4,.mov",
+        "multiple": true,
+        "hitIsPicker": true,
+        "dropzoneH": 110
+      },
+      "errors": [],
+      "tapBelow44": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 24
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 24
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 198,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 131,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 173,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 181,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 206,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 190,
+          "h": 36
+        }
+      ],
+      "tapCount": 28
+    },
+    "1920": {
+      "gate": {
+        "overflow": {
+          "vw": 1920,
+          "sw": 1920,
+          "scrollsSideways": false,
+          "outside": 0,
+          "examples": []
+        },
+        "tap": [
+          {
+            "tag": "input",
+            "id": "email",
+            "label": "",
+            "w": 94,
+            "h": 146.5
+          },
+          {
+            "tag": "input",
+            "id": "password",
+            "label": "",
+            "w": 94,
+            "h": 36
+          },
+          {
+            "tag": "input",
+            "id": "password2",
+            "label": "",
+            "w": 94,
+            "h": 36
+          },
+          {
+            "tag": "button",
+            "id": "",
+            "label": "Make this device's account",
+            "w": 202,
+            "h": 52
+          }
+        ]
+      },
+      "overflow": {
+        "vw": 1920,
+        "sw": 1920,
+        "scrollsSideways": false,
+        "outside": 0,
+        "examples": []
+      },
+      "tap": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 24
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 24
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 198,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 131,
+          "h": 36
+        },
+        {
+          "tag": "label",
+          "id": "dropzone",
+          "label": "drop mp4 or mov files here, ",
+          "w": 930,
+          "h": 110
+        },
+        {
+          "tag": "textarea",
+          "id": "mix",
+          "label": "Title: Morning light on the ",
+          "w": 930,
+          "h": 164
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 173,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "a short look at the water at",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "the landscape one.",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "label": "",
+          "w": 900,
+          "h": 90
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 181,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 206,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 190,
+          "h": 36
+        }
+      ],
+      "picker": {
+        "accept": "video/*,.mp4,.mov",
+        "multiple": true,
+        "hitIsPicker": true,
+        "dropzoneH": 110
+      },
+      "errors": [],
+      "tapBelow44": [
+        {
+          "tag": "button",
+          "id": "signout",
+          "label": "sign out",
+          "w": 76,
+          "h": 24
+        },
+        {
+          "tag": "button",
+          "id": "erase",
+          "label": "erase this device",
+          "w": 140,
+          "h": 24
+        },
+        {
+          "tag": "input",
+          "id": "channelName",
+          "label": "VR Shorts",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientId",
+          "label": "xxxx.apps.googleusercontent.",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "clientSecret",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "refreshToken",
+          "label": "",
+          "w": 458,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "label": "Save in this browser",
+          "w": 198,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "channel-forget",
+          "label": "Forget these",
+          "w": 131,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "split",
+          "label": "Split into fields",
+          "w": 173,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "Morning light on the bay",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "bay, morning",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "A wide clip",
+          "w": 900,
+          "h": 36
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "label": "wide",
+          "w": 445,
+          "h": 37
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "label": "privateunlistedpublic",
+          "w": 445,
+          "h": 38
+        },
+        {
+          "tag": "label",
+          "id": "",
+          "label": "upload this video",
+          "w": 900,
+          "h": 19
+        },
+        {
+          "tag": "button",
+          "id": "start",
+          "label": "Start upload queue",
+          "w": 181,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "stop",
+          "label": "Stop after this video",
+          "w": 206,
+          "h": 36
+        },
+        {
+          "tag": "button",
+          "id": "log-download",
+          "label": "Download log (.txt)",
+          "w": 190,
+          "h": 36
+        }
+      ],
+      "tapCount": 28
+    }
+  }
+}

@@ -1,6 +1,6 @@
 VR ShortsDrop upload log (by VR Developments)
-run started: 2026-11-09T17:08:00.441Z
-run ended: 2026-11-09T17:08:00.467Z
+run started: 2026-11-10T16:46:42.970Z
+run ended: 2026-11-10T16:46:43.000Z
 videos: 3 · uploaded: 1 · failed: 0 · not uploaded: 2
 note: captions are copy-only in this version (not posted to Instagram; YouTube caption tracks are not uploaded).
 

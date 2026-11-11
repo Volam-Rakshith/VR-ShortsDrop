@@ -1,0 +1,262 @@
+(node:1705797) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+> vr-upload-site@1.0.0 test
+> node --test test/parser.test.js test/upload.test.js test/login.test.js test/runlog.test.js test/site.test.js
+
+(node:1705810) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+TAP version 13
+# (node:1705816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: login: an account is made on the device and the password is never stored as text
+ok 1 - login: an account is made on the device and the password is never stored as text
+  ---
+  duration_ms: 29.380412
+  type: 'test'
+  ...
+# Subtest: login: right password opens it, wrong password does not, and the message does not say which part was wrong
+ok 2 - login: right password opens it, wrong password does not, and the message does not say which part was wrong
+  ---
+  duration_ms: 78.838079
+  type: 'test'
+  ...
+# Subtest: login: another phone (a fresh device with no stored account) cannot open the account
+ok 3 - login: another phone (a fresh device with no stored account) cannot open the account
+  ---
+  duration_ms: 52.43142
+  type: 'test'
+  ...
+# Subtest: login: a second account cannot be made over an existing one on the same device
+ok 4 - login: a second account cannot be made over an existing one on the same device
+  ---
+  duration_ms: 26.256899
+  type: 'test'
+  ...
+# Subtest: login: short passwords and bad emails are refused before anything is stored
+ok 5 - login: short passwords and bad emails are refused before anything is stored
+  ---
+  duration_ms: 0.242795
+  type: 'test'
+  ...
+# Subtest: login: erasing the account on this device removes it
+ok 6 - login: erasing the account on this device removes it
+  ---
+  duration_ms: 26.168219
+  type: 'test'
+  ...
+# Subtest: login: a damaged record is treated as no account, not as a crash
+ok 7 - login: a damaged record is treated as no account, not as a crash
+  ---
+  duration_ms: 0.155418
+  type: 'test'
+  ...
+# (node:1705817) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: labelled sample: every field is split out
+ok 8 - labelled sample: every field is split out
+  ---
+  duration_ms: 2.741132
+  type: 'test'
+  ...
+# Subtest: unlabelled mixed paragraph: first line is title, rest is description, IG line is picked up
+ok 9 - unlabelled mixed paragraph: first line is title, rest is description, IG line is picked up
+  ---
+  duration_ms: 0.64642
+  type: 'test'
+  ...
+# Subtest: two blocks, long and bracketed title: split, cut to 100 characters, cleaned, warned
+ok 10 - two blocks, long and bracketed title: split, cut to 100 characters, cleaned, warned
+  ---
+  duration_ms: 0.402942
+  type: 'test'
+  ...
+# Subtest: empty input: no crash, title warning, no block
+ok 11 - empty input: no crash, title warning, no block
+  ---
+  duration_ms: 0.809365
+  type: 'test'
+  ...
+# (node:1705818) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: log: a run starts with one entry per video and the reason each video is not uploaded
+ok 12 - log: a run starts with one entry per video and the reason each video is not uploaded
+  ---
+  duration_ms: 0.857555
+  type: 'test'
+  ...
+# Subtest: log: the title, description and tags recorded are the ones YouTube was sent (a Short gets \#Shorts)
+ok 13 - log: the title, description and tags recorded are the ones YouTube was sent (a Short gets \#Shorts)
+  ---
+  duration_ms: 1.658878
+  type: 'test'
+  ...
+# Subtest: log: a quota answer stops the queue; the video that hit it and the rest are logged as not uploaded with the reason
+ok 14 - log: a quota answer stops the queue; the video that hit it and the rest are logged as not uploaded with the reason
+  ---
+  duration_ms: 1.349572
+  type: 'test'
+  ...
+# Subtest: log: a failed upload is logged as failed with its message
+ok 15 - log: a failed upload is logged as failed with its message
+  ---
+  duration_ms: 0.137436
+  type: 'test'
+  ...
+# Subtest: log: the text file lists every video with its status, title, description, tags and the reason
+ok 16 - log: the text file lists every video with its status, title, description, tags and the reason
+  ---
+  duration_ms: 0.660896
+  type: 'test'
+  ...
+# Subtest: log: a cancelled run says the queue was stopped by the person
+ok 17 - log: a cancelled run says the queue was stopped by the person
+  ---
+  duration_ms: 0.121199
+  type: 'test'
+  ...
+# Subtest: log: runs are kept in browser storage, newest last, a rerun of the same run replaces it, the last 20 are kept
+ok 18 - log: runs are kept in browser storage, newest last, a rerun of the same run replaces it, the last 20 are kept
+  ---
+  duration_ms: 2.884175
+  type: 'test'
+  ...
+# Subtest: log: file name is safe and dated
+ok 19 - log: file name is safe and dated
+  ---
+  duration_ms: 0.141923
+  type: 'test'
+  ...
+# (node:1705824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: page: title, viewport, landmarks and the honest copy are on screen
+ok 20 - page: title, viewport, landmarks and the honest copy are on screen
+  ---
+  duration_ms: 0.733975
+  type: 'test'
+  ...
+# Subtest: page: the numbered steps (01 to 06, the last is the log) are there in order
+ok 21 - page: the numbered steps (01 to 06, the last is the log) are there in order
+  ---
+  duration_ms: 1.298714
+  type: 'test'
+  ...
+# Subtest: page: every local script and stylesheet it names exists
+ok 22 - page: every local script and stylesheet it names exists
+  ---
+  duration_ms: 0.276178
+  type: 'test'
+  ...
+# Subtest: page: no remote assets, fonts or trackers
+ok 23 - page: no remote assets, fonts or trackers
+  ---
+  duration_ms: 0.140767
+  type: 'test'
+  ...
+# Subtest: secrets: no real Google or YouTube credential pattern in any shipped file
+ok 24 - secrets: no real Google or YouTube credential pattern in any shipped file
+  ---
+  duration_ms: 0.387993
+  type: 'test'
+  ...
+# Subtest: privacy: channel details only leave the page for Google (token + YouTube upload endpoints)
+ok 25 - privacy: channel details only leave the page for Google (token + YouTube upload endpoints)
+  ---
+  duration_ms: 0.315475
+  type: 'test'
+  ...
+# Subtest: scope: no Instagram posting and no YouTube collaborator fields in v1
+ok 26 - scope: no Instagram posting and no YouTube collaborator fields in v1
+  ---
+  duration_ms: 1.078473
+  type: 'test'
+  ...
+# Subtest: mobile: layout collapses to one column and nothing is set to a fixed wide width
+ok 27 - mobile: layout collapses to one column and nothing is set to a fixed wide width
+  ---
+  duration_ms: 0.145504
+  type: 'test'
+  ...
+# Subtest: upload page: Shorts rule and the 100-character title rule are wired to the uploader
+ok 28 - upload page: Shorts rule and the 100-character title rule are wired to the uploader
+  ---
+  duration_ms: 0.209666
+  type: 'test'
+  ...
+# Subtest: login gate (stage 4): the login copy is on screen and the gate hides the steps until signed in
+ok 29 - login gate (stage 4): the login copy is on screen and the gate hides the steps until signed in
+  ---
+  duration_ms: 0.32845
+  type: 'test'
+  ...
+# Subtest: login (stage 4): password is hashed with WebCrypto PBKDF2 and a per-device salt; no network in login.js
+ok 30 - login (stage 4): password is hashed with WebCrypto PBKDF2 and a per-device salt; no network in login.js
+  ---
+  duration_ms: 0.17025
+  type: 'test'
+  ...
+# Subtest: branding (stage 5): VR ShortsDrop, by VR Developments, on the page title, header and footer
+ok 31 - branding (stage 5): VR ShortsDrop, by VR Developments, on the page title, header and footer
+  ---
+  duration_ms: 0.166367
+  type: 'test'
+  ...
+# Subtest: log (stage 7): a LOG step with a download button, loaded before the page script, and no network in the log code
+ok 32 - log (stage 7): a LOG step with a download button, loaded before the page script, and no network in the log code
+  ---
+  duration_ms: 0.162324
+  type: 'test'
+  ...
+# (node:1705825) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: resource: Shorts get \#Shorts once, titles stay at 100 characters, privacy defaults to private
+ok 33 - resource: Shorts get \#Shorts once, titles stay at 100 characters, privacy defaults to private
+  ---
+  duration_ms: 0.741161
+  type: 'test'
+  ...
+# Subtest: dry run: two videos upload one at a time, chunked, with progress and links; token from refresh
+ok 34 - dry run: two videos upload one at a time, chunked, with progress and links; token from refresh
+  ---
+  duration_ms: 3.877229
+  type: 'test'
+  ...
+# Subtest: a dropped chunk (503) is asked about and continued, not restarted
+ok 35 - a dropped chunk (503) is asked about and continued, not restarted
+  ---
+  duration_ms: 2.109186
+  type: 'test'
+  ...
+# Subtest: quota: queue stops, shows the message, leaves the rest waiting and does not start them
+ok 36 - quota: queue stops, shows the message, leaves the rest waiting and does not start them
+  ---
+  duration_ms: 0.533173
+  type: 'test'
+  ...
+# Subtest: skipped items (not a Short, unticked) are never uploaded
+ok 37 - skipped items (not a Short, unticked) are never uploaded
+  ---
+  duration_ms: 0.295284
+  type: 'test'
+  ...
+# Subtest: bad refresh token is an auth error that names the channel setup, no upload starts
+ok 38 - bad refresh token is an auth error that names the channel setup, no upload starts
+  ---
+  duration_ms: 0.555673
+  type: 'test'
+  ...
+# Subtest: storage: channel details save, load back trimmed, and clear
+ok 39 - storage: channel details save, load back trimmed, and clear
+  ---
+  duration_ms: 0.217027
+  type: 'test'
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 254.71465

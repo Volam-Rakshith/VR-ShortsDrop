@@ -17,7 +17,7 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.45; }
-body { background-image: radial-gradient(1200px 600px at 80% -10%, #1a2f4a 0%, transparent 60%); min-height: 100vh; }
+body { background-image: radial-gradient(1200px 600px at 80% -10%, #1a2f4a 0%, transparent 60%); min-height: 100vh; overflow-wrap: anywhere; }
 .mono { font-family: var(--mono); letter-spacing: 0.02em; }
 .top { padding: 22px 24px 8px; border-bottom: 1px solid var(--line); }
 .wordmark { font-family: var(--mono); font-weight: 700; font-size: 20px; letter-spacing: 0.12em; }
@@ -44,7 +44,7 @@ body { background-image: radial-gradient(1200px 600px at 80% -10%, #1a2f4a 0%, t
 .hint { color: var(--muted); font-size: 14px; margin: 8px 0; }
 .grid-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; }
 .grid-form label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); font-family: var(--mono); }
-input[type=text], input[type=password], textarea, select {
+input[type=text], input[type=password], input[type=email], textarea, select {
   width: 100%; background: #0b1626; color: var(--ink); border: 1px solid var(--line); border-radius: 7px; padding: 9px 10px; font: 14px var(--mono);
 }
 textarea { resize: vertical; min-height: 160px; }
@@ -63,6 +63,7 @@ input:focus, textarea:focus, select:focus, button:focus-visible, .dropzone:focus
 .card:nth-child(even) { transform: rotate(0.5deg); }
 .card .name { font-family: var(--mono); font-size: 13px; overflow-wrap: anywhere; }
 .card .meta { color: var(--muted); font-size: 12px; font-family: var(--mono); margin-top: 4px; }
+.card .stamp { position: static; display: inline-block; margin-bottom: 8px; }
 .stamp { position: absolute; top: 10px; right: 10px; font: 700 11px var(--mono); letter-spacing: 0.08em; text-transform: uppercase; border: 2px solid currentColor; border-radius: 4px; padding: 2px 6px; transform: rotate(4deg); }
 .s-waiting { color: var(--muted); }
 .s-uploading { color: var(--amber); }
@@ -83,12 +84,42 @@ input:focus, textarea:focus, select:focus, button:focus-visible, .dropzone:focus
 .queue-message { min-height: 1.4em; margin: 12px 0 0; color: var(--amber); font-size: 14px; }
 .foot { text-align: center; color: var(--muted); font-size: 12px; padding: 20px 16px 30px; }
 @media (max-width: 860px) {
-  .layout { grid-template-columns: 1fr; padding: 14px 12px 30px; gap: 14px; }
-  .index { position: static; }
-  .index-list { max-height: none; }
-  .grid-form, .rv .two { grid-template-columns: 1fr; }
-  .top { padding: 18px 14px 8px; }
+  /* tablets and small laptops: still two columns, the index a narrower column on the left */
+  .layout { grid-template-columns: 200px minmax(0, 1fr); gap: 16px; padding: 16px; }
+  .top { padding: 18px 16px 8px; }
+  .index-list { max-height: 50vh; }
   .step { padding: 14px; }
+}
+/* phones (about 360 to 430 px wide): one column, the index collapses to a strip across the top */
+@media (max-width: 600px) {
+  .layout { grid-template-columns: minmax(0, 1fr); padding: 12px 12px 30px; gap: 12px; }
+  .index { position: static; padding: 10px; }
+  .index-head { margin-bottom: 6px; }
+  .index-list { display: flex; flex-wrap: wrap; gap: 6px; max-height: none; overflow: visible; }
+  .index-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; max-width: 100%; }
+  .index-list li.index-empty { display: block; }
+  .index-list .n { flex: 0 0 auto; }
+  .index-list .t { flex: 1 1 120px; min-width: 0; max-width: 100%; }
+  .index-list .st { flex: 0 0 auto; white-space: nowrap; grid-column: auto; }
+  .count { margin-top: 8px; }
+  .top { padding: 16px 12px 8px; }
+  .wordmark { font-size: 18px; }
+  .step { padding: 14px 12px; }
+  .grid-form, .rv .two { grid-template-columns: minmax(0, 1fr); }
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .dropzone { min-height: 120px; }
+  .rv textarea { min-height: 100px; }
+  .actions .btn { flex: 1 1 auto; }
+}
+/* touch: anything a finger has to hit is at least 44 px tall (phones, and tablets with a touch screen) */
+@media (max-width: 600px), (pointer: coarse) {
+  input[type=text], input[type=password], input[type=email], select { min-height: 44px; font-size: 16px; }
+  textarea, .rv textarea { font-size: 16px; }
+  .btn, .btn.small { min-height: 44px; padding: 10px 14px; font-size: 15px; }
+  .btn.small { padding: 10px 12px; }
+  .rv .check { min-height: 44px; }
+  .rv .check input { width: 22px; height: 22px; flex: 0 0 22px; margin: 0; }
+  .card a, .log-list a { display: inline-block; min-height: 44px; line-height: 44px; }
 }
 @media (prefers-reduced-motion: reduce) { .bar > span { transition: none; } }
 
@@ -104,3 +135,6 @@ input:focus, textarea:focus, select:focus, button:focus-visible, .dropzone:focus
 .log-list .why { color: var(--muted); font-family: var(--mono); font-size: 12px; margin: 0; }
 .log-list .used { color: var(--ink); font-size: 13px; margin: 0; white-space: pre-wrap; }
 @media (max-width: 860px) { .account { margin-left: 0; } }
+
+/* run log: the stamp belongs in the flow of its own entry, not pinned to the page corner */
+.log-list .stamp { position: static; display: inline-block; justify-self: start; transform: rotate(3deg); }
